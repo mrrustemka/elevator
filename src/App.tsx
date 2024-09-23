@@ -2,11 +2,16 @@ import { FC } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Build from "./Components/Build";
+import Input from "./Components/Input";
 
 const router = createBrowserRouter([
   {
     path: "elevator",
-    element: <div className="app__div"></div>
+    element: (
+      <div className="app__div">
+        <Input />
+      </div>
+    )
   },
   {
     path: "elevator/build",
